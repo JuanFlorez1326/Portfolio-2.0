@@ -1,0 +1,129 @@
+@import '../../../scss/variables.scss';
+
+.home-page {
+    display: flex; 
+    
+    .about-me-text {
+        width: 50%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: flex-end;
+
+        .about-me-section {
+            width: 87%;
+            margin-top: 30px;
+
+            .presentation-text {
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+    
+            .role-text {
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: $color-text-white;
+            }
+    
+            .about-me-home {
+                p {
+                    color: $color-text-white;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        
+
+        .hire-me-info {
+            display: flex;
+
+            .btn {
+                width: 150px;
+                margin: 20px 0px;
+                font-weight: bold;
+                font-size: 18px;
+                outline: none;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+
+                &__btn-hire-me {
+                    border: none;
+                    margin-right: 20px;
+                    padding: 10px 20px;
+                    color: $color-text-black;
+                    background-color: $color-text-yellow;
+                }
+    
+                &__btn-cv {
+                    padding: 10px 5px;
+                    color: $color-text-yellow;
+                    border: 3px solid $color-text-yellow;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            } 
+        }
+
+        .contact-me-icons {
+            margin-top: 10px;
+
+            .btn-contact-me {
+                margin-right: 10px;
+                width: 40px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+
+                .contact-me-icon {
+                    font-size: 27px;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .about-me-section-image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+
+        .about-me-image {
+            width: 60%;
+            margin-top: 20px;
+            display: flex;
+    
+            .image-profile {
+                width: 100%;
+                border-radius: 60px;
+                position: relative;
+                animation: moveUpDown 1s infinite alternate; 
+            }
+
+            @keyframes moveUpDown {
+
+                0% {
+                  top: 0px;
+                }
+              
+                100% {
+                  top: 30px;
+                }
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 1100px) {
+    .home-page {
+        display: block;
+    }
+}

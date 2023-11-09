@@ -1,0 +1,61 @@
+@import '../../../scss/variables.scss';
+
+.footer-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    margin-bottom: 10px;
+}
+
+.contact-me-icons {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+    .contact-icon {
+        width: 60%;
+        display: flex;
+        justify-content: space-evenly;
+            
+        .btn-contact-me {
+            width: 40px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            .contact-me-icon {
+                font-size: 27px;
+                text-decoration: none;
+                color: transparentize($color-text-white, 0.3);
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.footer-all-options {
+    margin-bottom: 15px;
+
+    .footer-option {
+        color: transparentize($color-text-white, 0.3);
+        text-decoration: none;
+        margin-left: 30px;
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+    }
+}
+
+.content-rights {
+    display: flex;
+    justify-content: center;
+
+    span {
+        color: transparentize($color-text-white, 0.5);
+        font-weight: bold;
+    }
+}

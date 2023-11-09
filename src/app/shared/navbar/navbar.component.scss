@@ -1,0 +1,40 @@
+@import '../../../scss/variables.scss';
+// @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@700&family=Roboto:ital,wght@1,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@700&family=Roboto:ital,wght@0,500;1,700&display=swap');
+
+.portfolio-page {    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 100px;
+
+        .navbar-logo {
+            .navbar-logo-option {
+                position: relative;
+                bottom: 12px;
+                color: $color-text-yellow;
+                text-decoration: none;
+                font-size: 30px;
+                font-family: 'Lobster', cursive;
+            }
+        }
+        
+        .navbar-all-options {
+
+            .navbar-option {
+                color: $color-text-white;
+                text-decoration: none;
+                margin-left: 30px;
+                font-size: 17px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 600;
+            }
+
+            .active {
+                color: $color-text-yellow;
+                border-bottom: 3px solid $color-text-yellow;
+                border-radius: 2px;
+            }
+        }
+    }
+}

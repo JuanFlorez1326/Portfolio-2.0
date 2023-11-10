@@ -1,14 +1,70 @@
-<div class="portfolio-page">
-    <div class="navbar">
-        <div class="navbar-logo">
-            <a class="navbar-logo-option" routerLink="/home">JuanFlorez.</a>
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav mode="push">
+
+        <mat-toolbar>
+            <span>Menu</span>
+            <button class="btn-angular" (click)="sidenav.toggle()">
+                <a matTooltip="Cerrar menu" class="icon-angular fa-brands fa-angular"></a>
+            </button>
+        </mat-toolbar>
+
+        <mat-nav-list>
+            <div class="navbar-all-options">
+                <div class="option">
+                    <a class="navbar-option" routerLink="/home" routerLinkActive="active" (click)="sidenav.toggle()">
+                        <em class="fa-solid fa-house" ></em> Home
+                    </a>
+                </div>
+                <div class="option">
+                    <a class="navbar-option" routerLink="/about"   routerLinkActive="active" (click)="sidenav.toggle()">
+                        <em class="fa-solid fa-user"></em> About
+                    </a>
+                </div>
+                <div class="option">
+                    <a class="navbar-option" routerLink="/works"   routerLinkActive="active" (click)="sidenav.toggle()">
+                        <em class="fa-solid fa-briefcase"></em> Works
+                    </a>
+                </div>
+                <div class="option">
+                    <a class="navbar-option" routerLink="/Skills"  routerLinkActive="active" (click)="sidenav.toggle()">
+                        <em class="fa-solid fa-gear"></em> Skills
+                    </a>
+                </div>
+                <div class="option">
+                    <a class="navbar-option" routerLink="/contact" routerLinkActive="active" (click)="sidenav.toggle()">
+                        <em class="fa-solid fa-message"></em> Contact
+                    </a>
+                </div>
+            </div>
+        </mat-nav-list>
+        
+    </mat-sidenav>
+
+    <mat-toolbar>
+        <div class="navbar-section">
+            <div class="section-menu">
+                <button class="btn-angular" (click)="sidenav.toggle()"><a matTooltip="Abrir menu" class="icon-angular icon-angular__space fa-brands fa-angular"></a></button>
+                <div class="navbar-logo">
+                    <a class="navbar-logo-option" routerLink="/home">JuanFlorez</a>
+                </div>
+            </div>
+
+            <div class="second-menu-options">
+                <button mat-button disableRipple matTooltip="Mas opciones" [matMenuTriggerFor]="moreMenu">
+                    <em class="fa-solid fa-ellipsis-vertical"></em>
+                </button>
+                <mat-menu #moreMenu="matMenu">
+                    <button mat-menu-item >Theme</button>
+                    <button mat-menu-item [matMenuTriggerFor]="languaje">Languaje</button>
+                </mat-menu>
+                <mat-menu #languaje="matMenu">
+                    <button mat-menu-item >Español</button>
+                    <button mat-menu-item >Ingles</button>
+                </mat-menu>
+            </div>
         </div>
-        <div class="navbar-all-options">
-            <a class="navbar-option" routerLink="/home" routerLinkActive="active">Home</a>
-            <a class="navbar-option" routerLink="/about" routerLinkActive="active">About</a>
-            <a class="navbar-option" routerLink="/works" routerLinkActive="active">Works</a>
-            <a class="navbar-option" routerLink="/resume" routerLinkActive="active">Resume</a>
-            <a class="navbar-option" routerLink="/contact" routerLinkActive="active">Contact</a>
-        </div>
-    </div>
-</div>
+    </mat-toolbar>
+
+    <div><router-outlet></router-outlet></div>
+
+</mat-sidenav-container>

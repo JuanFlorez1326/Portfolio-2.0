@@ -1,0 +1,120 @@
+@import "../../../scss/variables.scss";
+
+.section-contact-me {
+    width: 90%;
+    padding: 20px;
+    margin:  30px auto;
+
+    .contact-me-info {
+        display: flex;
+
+        .contact-me-personal-info {
+            width: 40%;
+            margin: 20px 5px;
+
+            .contact-me-personal {
+                margin-top: 15%;
+                display: flex;
+                padding: 10px;
+
+                .items-info {
+                    margin-bottom: 40px;
+                }
+            }
+
+            .contact-me-title {
+                font-size: 30px;
+                font-weight: bold;
+                color: $color-text-white;
+            }
+            
+            .contact-me-subtitle-content {
+                margin-top: 20px;
+
+                .contact-me-subtitle {
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: $color-text-white;
+                    margin-left: 10px;
+                }
+            }
+            
+
+            .item-personal-info {
+                margin-top: 30px;
+                margin-left: 25px;
+
+                .item-personal-info-icon {
+                    margin-right: 15px;
+                    font-size: 20px;
+                    color: $color-text-yellow;
+                }
+
+                .item-personal-info-title {
+                    font-size: 17px;
+                    font-weight: bold;
+                    color: $color-text-yellow;
+                
+                }
+            }
+        }
+
+        .contact-me-form {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+
+            .contact-me-form-info {
+                width: 80%;
+                margin-top: 20px;
+            }
+        }
+
+        .form-input-name, .form-input-email {
+            width: 100%;
+            cursor: text;
+            border: none;
+            outline: none;
+            
+            input {
+                outline: none;
+                border: none;
+            }
+        }
+
+        .form-textarea-message {
+            width: 100%;
+            min-height: 40vh;
+            max-height: 40vh;
+            height: 40vh;
+            
+            textarea {
+                resize: none;
+            }
+        }
+
+        .btn-send-message {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                width: 180px;
+                height: 50px;
+                border-radius: 10px;
+                border: none;
+                font-size: 18px;
+                outline: none;
+                cursor: pointer;
+                background-color: #E1C14F;
+                color: $color-text-black;
+                font-weight: bold;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

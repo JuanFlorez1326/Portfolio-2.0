@@ -30,5 +30,21 @@
             "TEXT2": "a Full Stack Web Developer focused mainly on Frontend",
             "TEXT3": "I am motivated to continue perfecting my skills and continue growing professionally"
         }
+    },
+    "CONTACT": {
+        "TITLE": "Contact Me",
+        "SUBTITLE": "Do you have a project in mind? Let's talk!",
+        "FORM": {
+            "NAME": "Your name",
+            "EMAIL": "Your email",
+            "MESSAGE": "Type your message here",
+            "SEND_MSG": "Send message",
+
+            "INPUT_FORM": {
+                "NAME": "Please enter your name",
+                "EMAIL": "Please enter your email",
+                "MESSAGE": "Please enter your message"
+            }
+        }
     }
 }

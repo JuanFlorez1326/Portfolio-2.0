@@ -3,6 +3,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
@@ -13,6 +14,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatSidenavModule,
     MatTooltipModule,
     MatButtonModule,
+    MatInputModule,
     MatListModule,
     MatIconModule,
     MatMenuModule

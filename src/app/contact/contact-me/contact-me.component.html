@@ -1,1 +1,48 @@
-<p>contact-me works!</p>
+<div class="section-contact-me">
+    <div class="contact-me-info">
+        <div class="contact-me-personal-info">
+            <div class="contact-me-personal">
+                <div>
+                    <div class="items-info">
+                        <div><span class="contact-me-title">{{ 'CONTACT.TITLE' | translate }}</span></div>
+                        <div class="contact-me-subtitle-content"><span class="contact-me-subtitle">{{ "CONTACT.SUBTITLE" | translate }}</span></div>
+                    </div>
+                    <div *ngFor="let item of information">
+                        <div class="item-personal-info">
+                            <em class="{{item.icon}} item-personal-info-icon"></em>
+                            <span class="item-personal-info-title">{{ item.title }}: </span>
+                            <span class="item-personal-info-content">{{ item.content }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-me-form">
+            <div class="contact-me-form-info">
+                <form>
+                    <div>
+                        <mat-form-field class="form-input-name" appearance="outline">
+                            <mat-label class="color-input-label">{{ 'CONTACT.FORM.NAME' | translate }}</mat-label>
+                            <input type="text" autocomplete="nope" required class="color-input-label" placeholder="{{ 'CONTACT.FORM.INPUT_FORM.NAME' | translate }}" matInput>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field class="form-input-email" appearance="outline">
+                            <mat-label class="color-input-label">{{ 'CONTACT.FORM.EMAIL' | translate }}</mat-label>
+                            <input type="email" autocomplete="nope" required class="color-input-label" placeholder="{{ 'CONTACT.FORM.INPUT_FORM.EMAIL' | translate }}" matInput>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field class="form-textarea-message" appearance="outline">
+                            <mat-label>{{ 'CONTACT.FORM.MESSAGE' | translate }}</mat-label>
+                            <textarea required type="text" required class="color-input-label" placeholder="{{ 'CONTACT.FORM.INPUT_FORM.MESSAGE' | translate }}" matInput></textarea>
+                        </mat-form-field>
+                    </div>
+                    <div class="btn-send-message">
+                        <button>{{ "CONTACT.FORM.SEND_MSG" | translate }}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

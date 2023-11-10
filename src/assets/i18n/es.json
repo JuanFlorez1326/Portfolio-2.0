@@ -30,5 +30,21 @@
             "TEXT2": "Desarrollador Web Full Stack enfocado principalmente en Frontend",
             "TEXT3": "Gran motivación para seguir perfeccionando mis habilidades y crecer profesionalmente"
         }
+    },
+    "CONTACT": {
+        "TITLE": "Contáctame",
+        "SUBTITLE": "¿Tienes un proyecto en mente? ¡Hablemos!",
+        "FORM": {
+            "NAME": "Su nombre",
+            "EMAIL": "Su correo electrónico",
+            "MESSAGE": "Escribe tu mensaje aquí",
+            "SEND_MSG": "Enviar mensaje",
+
+            "INPUT_FORM": {
+                "NAME": "Por favor ingrese su nombre",
+                "EMAIL": "Por favor ingrese su correo",
+                "MESSAGE": "Por favor ingrese su mensaje"
+            }
+        }
     }
 }

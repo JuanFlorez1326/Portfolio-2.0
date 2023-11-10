@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent } from './navbar/navbar.component';
-import { RouterLinkActive, RouterModule } from '@angular/router';
-import { FooterComponent } from './footer/footer.component';
+import { TranslateModule } from '@ngx-translate/core';
 import { MaterialModule } from './material/material.module';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { RouterLinkActive, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -11,14 +13,17 @@ import { MaterialModule } from './material/material.module';
     FooterComponent
   ],
   imports: [
+    FormsModule,
     CommonModule,
     RouterModule,
     MaterialModule,
+    TranslateModule,
     RouterLinkActive
   ],
   exports: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    TranslateModule
   ]
 })
 export class SharedModule {}

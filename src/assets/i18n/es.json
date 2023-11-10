@@ -1,0 +1,26 @@
+{
+    "CONFIG_APP": {
+        "THEME": "Tema",
+        "LANGUAGE": {
+            "TITLE": "Idioma",
+            "ENGLISH": "Inglés",
+            "SPANISH": "Español"
+        },
+        "SIDENAV_MENU": {
+            "OPEN_SIDENAV": "Abrir menú",
+            "CLOSE_SIDENAV": "Cerrar menú"
+        }
+    },
+    "HOME": {
+        "ME": "Hola, soy Juan Florez",
+        "ROLE": "Desarrollador Web Full Stack",
+        "SIDENAV": {
+            "TITLE": "Menú",
+            "HOME": "Inicio",
+            "ABOUT_ME": "Sobre mí",
+            "WORKS": "Trabajos",
+            "SKILLS": "Habilidades",
+            "CONTACT_ME": "Contáctame"
+        }
+    }
+}

@@ -13,6 +13,10 @@ mat-toolbar {
     }
 }
 
+mat-sidenav {
+    width: 200px;
+}
+
 .navbar-section {
     padding-top: 20px;
     width: 100%;
@@ -31,7 +35,7 @@ mat-toolbar {
     background-color: $color-background;
 
     .icon-angular {
-        color: red;
+        color: #DE002D;
         font-size: 35px;
         cursor: pointer;
         
@@ -56,18 +60,17 @@ mat-toolbar {
 .navbar-all-options {
 
     .option {
-        margin-bottom: 15px;
-        margin-left: 10px;
         
         .navbar-option {
             color: $color-text-white;
             text-decoration: none;
-            margin-left: 10px;
+            padding-left: 15px;
             font-size: 17px;
             font-family: 'Roboto', sans-serif;
             font-weight: 600;
 
             em {
+                font-size: 20px;
                 margin-right: 10px;
             }
         }

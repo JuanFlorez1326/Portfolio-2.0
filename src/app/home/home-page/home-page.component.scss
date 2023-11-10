@@ -4,6 +4,7 @@
     display: flex; 
     
     .about-me-text {
+        color: $color-text-yellow;
         width: 50%;
         margin-top: 5%;
         display: flex;
@@ -14,16 +15,18 @@
             margin-top: 30px;
 
             .presentation-text {
+                background-color: $color-background;
                 font-size: 30px;
                 font-weight: bold;
-                margin-bottom: 8px;
+                margin-bottom: 15px;
             }
     
             .role-text {
                 font-size: 30px;
                 font-weight: bold;
-                margin-bottom: 20px;
-                color: $color-text-white;
+                margin-bottom: 25px;
+                color: $color-text-yellow;
+
             }
     
             .about-me-home {
@@ -59,6 +62,7 @@
                 &__btn-cv {
                     padding: 10px 5px;
                     color: $color-text-yellow;
+                    background-color: $color-background;
                     border: 3px solid $color-text-yellow;
                 }
 
@@ -78,8 +82,10 @@
                 border: none;
                 cursor: pointer;
                 transition: all 0.3s ease-in-out;
+                background-color: $color-background;
 
                 .contact-me-icon {
+                    color: $color-text-yellow;
                     font-size: 27px;
                     text-decoration: none;
                 }
@@ -92,13 +98,13 @@
     }
 
     .about-me-section-image {
-        width: 50%;
+        width: 45%;
         display: flex;
         justify-content: center;
 
         .about-me-image {
             width: 60%;
-            margin-top: 20px;
+            margin-top: 40px;
             display: flex;
     
             .image-profile {

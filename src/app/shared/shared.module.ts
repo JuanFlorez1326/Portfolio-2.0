@@ -23,7 +23,8 @@ import { RouterLinkActive, RouterModule } from '@angular/router';
   exports: [
     NavbarComponent,
     FooterComponent,
-    TranslateModule
+    TranslateModule,
+    MaterialModule
   ]
 })
 export class SharedModule {}

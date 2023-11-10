@@ -9,11 +9,14 @@
         "SIDENAV_MENU": {
             "OPEN_SIDENAV": "Abrir menú",
             "CLOSE_SIDENAV": "Cerrar menú"
-        }
+        },
+        "MORE_OPTIONS": "Más opciones"
     },
     "HOME": {
         "ME": "Hola, soy Juan Florez",
         "ROLE": "Desarrollador Web Full Stack",
+        "HIRE_ME": "Contrátame",
+        "DOWNLOAD_CV": "Descargar CV",
         "SIDENAV": {
             "TITLE": "Menú",
             "HOME": "Inicio",
@@ -21,6 +24,11 @@
             "WORKS": "Trabajos",
             "SKILLS": "Habilidades",
             "CONTACT_ME": "Contáctame"
+        },
+        "DESCRIPTION": {
+            "TEXT1": "Soy Juan Florez de Colombia",
+            "TEXT2": "Desarrollador Web Full Stack enfocado principalmente en Frontend",
+            "TEXT3": "Gran motivación para seguir perfeccionando mis habilidades y crecer profesionalmente"
         }
     }
 }

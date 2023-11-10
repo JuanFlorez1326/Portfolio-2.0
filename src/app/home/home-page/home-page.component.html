@@ -4,26 +4,26 @@
             <div class="presentation-text"><span>{{ 'HOME.ME' | translate }}</span></div>
             <div class="role-text"><span>{{ 'HOME.ROLE' | translate }}</span></div>
             <div class="about-me-home">
-                <p>I am Juan Florez from Colombia,</p>
-                <p>a Full Stack Web Developer focused mainly on Frontend,</p>
-                <p>I am motivated to continue perfecting my skills and continue growing professionally.</p>
+                <p>{{ "HOME.DESCRIPTION.TEXT1" | translate }}</p>
+                <p>{{ "HOME.DESCRIPTION.TEXT2" | translate }}</p>
+                <p>{{ "HOME.DESCRIPTION.TEXT3" | translate }}</p>
             </div>
             <div class="hire-me-info">
-                <button class="btn btn__btn-hire-me">Hire Me</button>
-                <button class="btn btn__btn-cv" (click)="downloadCv()">Download CV</button>
+                <button class="btn btn__btn-hire-me" routerLink="/contact">{{ "HOME.HIRE_ME" | translate }}</button>
+                <button class="btn btn__btn-cv" (click)="downloadCv()">{{ "HOME.DOWNLOAD_CV" | translate }}</button>
             </div>
             <div class="contact-me-icons">     
                 <button class="btn-contact-me">
-                    <a class="fa-brands fa-linkedin contact-me-icon" href="https://www.linkedin.com/in/juanflorez1326" target="_blank"></a>
+                    <a matTooltip="LinkedIn" class="fa-brands fa-linkedin contact-me-icon" href="https://www.linkedin.com/in/juanflorez1326" target="_blank"></a>
                 </button>
                 <button class="btn-contact-me">
-                    <a class="fa-regular fa-envelope contact-me-icon" href="mailto:juanks339@gmail.com" target="_blank"></a>
+                    <a matTooltip="Email" class="fa-regular fa-envelope contact-me-icon" href="mailto:juanks339@gmail.com" target="_blank"></a>
                 </button>
                 <button class="btn-contact-me">
-                    <a class="fa-brands fa-whatsapp contact-me-icon" href="https://walink.co/3b602b" target="_blank"></a>
+                    <a matTooltip="WhatsApp" class="fa-brands fa-whatsapp contact-me-icon" href="https://walink.co/3b602b" target="_blank"></a>
                 </button>
                 <button class="btn-contact-me">
-                    <a class="fa-brands fa-github contact-me-icon" href="https://github.com/JuanFlorez1326" target="_blank"></a>
+                    <a matTooltip="GitHub" class="fa-brands fa-github contact-me-icon" href="https://github.com/JuanFlorez1326" target="_blank"></a>
                 </button>
             </div>
         </div>

@@ -2,7 +2,7 @@
     <mat-sidenav #sidenav mode="push">
 
         <mat-toolbar>
-            <span>Menu</span>
+            <span>{{ "HOME.SIDENAV.TITLE" | translate }}</span>
             <button class="btn-angular" (click)="sidenav.toggle()">
                 <a matTooltip="{{ 'CONFIG_APP.SIDENAV_MENU.CLOSE_SIDENAV' | translate }}" class="icon-angular fa-brands fa-angular"></a>
             </button>
@@ -12,27 +12,32 @@
             <div class="navbar-all-options">
                 <div class="option">
                     <a class="navbar-option" routerLink="/home" mat-list-item routerLinkActive="active" (click)="sidenav.toggle()">
-                        <em class="fa-solid fa-house" ></em> {{ "HOME.SIDENAV.HOME" | translate }}
+                        <em class="fa-solid fa-house" ></em>
+                        <span routerLinkActive="active">{{ "HOME.SIDENAV.HOME" | translate }}</span>
                     </a>
                 </div>
                 <div class="option">
                     <a class="navbar-option" routerLink="/skills" mat-list-item routerLinkActive="active" (click)="sidenav.toggle()">
-                        <em class="fa-solid fa-gear"></em> {{ "HOME.SIDENAV.SKILLS" | translate }}
+                        <em class="fa-solid fa-gear"></em>
+                        <span routerLinkActive="active">{{ "HOME.SIDENAV.SKILLS" | translate }}</span>
                     </a>
                 </div>
                 <div class="option">
                     <a class="navbar-option" routerLink="/works" mat-list-item routerLinkActive="active" (click)="sidenav.toggle()">
-                        <em class="fa-solid fa-briefcase"></em> {{ "HOME.SIDENAV.WORKS" | translate }}
+                        <em class="fa-solid fa-briefcase"></em>
+                        <span routerLinkActive="active">{{ "HOME.SIDENAV.WORKS" | translate }}</span>
                     </a>
                 </div>
                 <div class="option">
                     <a class="navbar-option" routerLink="/about" mat-list-item routerLinkActive="active" (click)="sidenav.toggle()">
-                        <em class="fa-solid fa-user"></em> {{ "HOME.SIDENAV.ABOUT_ME" | translate }}
+                        <em class="fa-solid fa-user"></em>
+                        <span routerLinkActive="active">{{ "HOME.SIDENAV.ABOUT_ME" | translate }}</span>
                     </a>
                 </div>
                 <div class="option">
                     <a class="navbar-option" routerLink="/contact" mat-list-item routerLinkActive="active" (click)="sidenav.toggle()">
-                        <em class="fa-solid fa-message"></em> {{ "HOME.SIDENAV.CONTACT_ME" | translate }}
+                        <em class="fa-solid fa-message"></em>
+                        <span routerLinkActive="active">{{ "HOME.SIDENAV.CONTACT_ME" | translate }}</span>
                     </a>
                 </div>
             </div>
@@ -50,7 +55,7 @@
             </div>
 
             <div class="second-menu-options">
-                <button mat-button disableRipple matTooltip="Mas opciones" [matMenuTriggerFor]="moreMenu">
+                <button mat-icon-button matTooltip="{{ 'CONFIG_APP.MORE_OPTIONS' | translate }}" [matMenuTriggerFor]="moreMenu">
                     <em class="fa-solid fa-ellipsis-vertical"></em>
                 </button>
                 <mat-menu #moreMenu="matMenu">

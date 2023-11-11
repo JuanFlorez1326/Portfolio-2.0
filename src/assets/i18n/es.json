@@ -31,6 +31,9 @@
             "TEXT3": "Gran motivación para seguir perfeccionando mis habilidades y crecer profesionalmente"
         }
     },
+    "ABOUNT_ME": {
+        "TEXT": "¡Hola! Soy Juan Florez, un apasionado Desarrollador Web Full Stack, mi enfoque se centra en desarrollar soluciones web eficientes y estéticas, utilizando tecnologías como Angular, NestJs, TypeScript, JavaScript, SCSS, HTML, CSS entre otras tecnologías. Mi habilidad para equilibrar funcionalidad y diseño se refleja en proyectos que abarcan desde pequeñas empresas hasta empresas internacionales. Me destaco en entornos colaborativos, creyendo en la importancia de la comunicación efectiva para el éxito del equipo. Mi compromiso no solo se limita al código funcional, sino también a la mejora continua y al aprendizaje de nuevas tecnologías."
+    },
     "CONTACT": {
         "TITLE": "Contáctame",
         "SUBTITLE": "¿Tienes un proyecto en mente? ¡Hablemos!",
